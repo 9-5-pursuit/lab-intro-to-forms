@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment-form</title>
+    <style>
+      .payment {
+        background-color: rgb(174, 249, 25);
+        color: rgba(65, 71, 56, 0.863);
+        border: 2px solid rgba(6, 0, 0, 0.408);
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Payment Form</h1>
+
+      <p><strong>Required fields are marked by *</strong></p>
+      <div class="payment">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <br />
+          <label>
+            Mx.
+            <br />
+            <input id="Mx." name="prefix" type="radio" value="prefix" checked />
+          </label>
+          <br />
+
+          <label>
+            Mr.
+            <br />
+            <input id="Mr." name="prefix" type="radio" value="prefix" />
+          </label>
+          <br />
+
+          <label>
+            Ms.
+            <br />
+            <input id="Ms." name="prefix" type="radio" value="prefix" />
+          </label>
+          <br />
+
+          <label>
+            Mrs.
+            <br />
+            <input id="Mrs." name="prefix" type="radio" value="public" />
+          </label>
+
+          <br />
+          <label for="name">Name *</label> <br /><input
+            type="text"
+            id="name"
+            required
+          />
+          <br />
+          <label for="email">Email *</label> <br /><input type="email"
+          id="email" required
+        </fieldset>
+      </div>
+      <div class="payment">
+        <fieldset>
+          <legend>Payment Information</legend>
+          <label>
+            <select id="post-category" name="category">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="american-express">American Express</option>
+              <option value="discover">Discover</option>
+            </select>
+            Credit Card Number *
+          </label>
+          <br />
+          <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required />
+          <br />
+          <label for="expiration-date">Expiration Date *</label> <br /><input
+          type="text" id="expiration-date" required
+        </fieldset>
+
+        <input type="submit" value="Submit Payment" />
+      </div>
+    </form>
+  </body>
+</html>
