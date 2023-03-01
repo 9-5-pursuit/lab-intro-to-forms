@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another html page</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form id ="client-information">
+        <fieldset id="client-information">
+            <legend>Contact Information</legend>
+            <div>
+                <!--radio gender selecter-->
+                <label>
+                    Mx.
+                    <br/>
+                    <input id="gender-mx" name="gender" type="radio" value="Mx." checked/>
+                </label>
+                <br/>
+                <label>
+                    Mr.
+                    <br/>
+                    <input id="gender-mr" name="gender" type="radio" value="Mr."/>
+                </label>
+                <br/>
+                <label>
+                    Ms.
+                    <br/>
+                    <input id="gender-ms" name="gender" type="radio" value="Ms."/>
+                </label>
+                <br/>
+                <label>
+                    Mrs.
+                    <br/>
+                    <input id="gender-mrs" name="gender" type="radio" value="Mrs."/>
+                </label>
+                <br/>
+
+                <!--name-->
+                <label for="name">Name</label>
+                <br/>
+                <input id="name" name="name" type="text" required/>
+                <br/>
+                <!--Email-->
+                <label for="email">Email</label>
+                <br/>
+                <input id="email" name="email" type="email" required/>
+            </div>
+        </fieldset>
+        <fieldset id="client-information">
+            <legend>Payment Information</legend>
+            <div>
+                <!--Dropdown-->
+                <select id="card-selection" name="card">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+                Credit Card Number
+                <br/>
+                <input type="tel" id="credit-card-number" name="credit card number" placeholder="xxxx xxxx xxxx xxxx" required/>
+                <br/>
+                <!--Expiration date-->
+                <label for="expiration-date">Expiration Date</label>
+                <br/>
+                <input id="expiration-date" name="expiration date" type="text" required/>
+            </div>
+        </fieldset>
+        <input id="submit-button" name="submit" type="submit" value="Submit Payment"/>
+    </form>
+</body>
+</html>
