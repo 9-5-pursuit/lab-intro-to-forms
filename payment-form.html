@@ -11,67 +11,67 @@
     <div>
         <p>Required fields are marked by *</p>
     </div>
-    
     <form id="information">
         <fieldset form="practice">
             <legend>Contact Information</legend>
             <div>
                 <label>
-                    <input id="gender-x" name="gender" type="radio" value="any" checked/>
+                    <input id="gender-x" name="gender" type="radio" value="any" checked />
                     Mx.
-                  </label>
+                </label>
             </div>
             <div>
                 <label>
                     <input id="gender-male" name="gender" type="radio" value="male" />
                     Mr.
-                  </label>
+                </label>
             </div>
-                <div>
-                    <label>
-                        <input id="gender-female" name="gender" type="radio" value="female" />
-                        Mrs.
-                      </label>
-                </div>
-                <div>
-                    <label>
-                        <input id="gender-undisclosed" name="gender" type="radio" value="undisclosed"/>
-                        Ms.
-                      </label>        
-                </div>
-              </div>
-              <div>
+            <div>
+                <label>
+                    <input id="gender-female" name="gender" type="radio" value="female" />
+                    Mrs.
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="gender-undisclosed" name="gender" type="radio" value="undisclosed" />
+                    Ms.
+                </label>
+            </div>
+            </div>
+            <div>
                 <label for="username">Name</label>
-                <input id="name" name="name" type="text" required/>
-              </div>
-              <div>
+                <input id="name" name="name" type="text" required />
+            </div>
+            <div>
                 <label for="email">Email</label>
-                <input id="email" name="ename" type="email" required/>
-              </div>
+                <input id="email" name="ename" type="email" required />
+            </div>
         </fieldset>
         <fieldset form="practice">
             <legend>Payment Information</legend>
             <div class="form-field">
                 <select id="card-selection" name="pmtcard">
-                  <option value="amzn">Amazon</option>
-                  <option value="masterc">Mastercard</option>
-                  <option value="amex">Amex</option>
-                  <option value="walmart">Walmart</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
                 </select>
-              </div>
-              </div>
-              <div>
-                <input id="card num" maxlength="11" name="cardnum" type="text" placeholder="xxxx xxxx xxxx xxxx" required/> Credit Card Number
-              </div>
-              <div>
+            </div>
+            </div>
+            <div>
+                <input id="card num" maxlength="11" name="cardnum" type="text" placeholder="xxxx xxxx xxxx xxxx"
+                    required /> Credit Card Number
+            </div>
+            <div>
                 <div>
                     <label for="email">Expiration Date</label>
                 </div>
-                <input id="expiration-date" name="expiry" type="text" required/>
-              </div>
+                <input id="expiration-date" name="expiry" type="text" required />
+            </div>
         </fieldset>
         <div>
-            <input type="submit" id="enterpmt">Submit Payment</button>
+            <input type="submit" value="Submit Payment" />
         </div>
     </form>
 </body>
