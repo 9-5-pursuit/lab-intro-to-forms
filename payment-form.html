@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <div>
+        <p>Required fields are marked by *</p>
+    </div>
+    <form id="information">
+        <fieldset form="practice">
+            <legend>Contact Information</legend>
+            <div>
+                <label>
+                    <input id="gender-x" name="gender" type="radio" value="any" checked />
+                    Mx.
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="gender-male" name="gender" type="radio" value="male" />
+                    Mr.
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="gender-female" name="gender" type="radio" value="female" />
+                    Mrs.
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="gender-undisclosed" name="gender" type="radio" value="undisclosed" />
+                    Ms.
+                </label>
+            </div>
+            </div>
+            <div>
+                <label for="username">Name</label>
+                <input id="name" name="name" type="text" required />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="ename" type="email" required />
+            </div>
+        </fieldset>
+        <fieldset form="practice">
+            <legend>Payment Information</legend>
+            <div class="form-field">
+                <select id="card-selection" name="pmtcard">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </div>
+            </div>
+            <div>
+                <input id="card num" maxlength="11" name="cardnum" type="text" placeholder="xxxx xxxx xxxx xxxx"
+                    required /> Credit Card Number
+            </div>
+            <div>
+                <div>
+                    <label for="email">Expiration Date</label>
+                </div>
+                <input id="expiration-date" name="expiry" type="text" required />
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Submit Payment" />
+        </div>
+    </form>
+</body>
+</html>
