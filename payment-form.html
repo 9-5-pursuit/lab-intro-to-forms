@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms</title>
+</head>
+<body>
+    <h1>
+        <strong>Payment Form</strong>
+    </h1>
+   
+    <p>Required fields are marked by *</p>
+ 
+    
+    <br> </br>
+    <form>
+
+   
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>
+                Mx.
+                <br> </br>
+                <input id = "title-Mx" name = "title" type = "radio" value = "Mx." checked/>
+                
+            </label>
+            <br> </br>
+
+            <label>
+                Mr.
+                <br> </br>
+                <input id = "title-Mr" name = "title" type = "radio" value = "Mr."/>
+            </label>
+            <br> </br>
+
+            <label>
+                Ms.
+                <br> </br>
+                <input id = "title-Ms" name = "title" type = "radio" value = "Ms."/>
+            </label>
+            <br> </br>
+
+            <label>
+                Mrs.
+                <br> </br>
+                <input id ="title-Mrs" name = "title" type = "radio" value = "Mrs."/>
+
+            </label>
+            <br> </br>
+
+            <label for = "name">
+                Name
+                <br> </br>
+                <input id ="name" type = "text" required/>
+
+            </label>
+            <br> </br>
+
+            <label for ="email">
+                Email
+                <br> </br>
+                <input id = "email" type = "email" required/>
+
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <select id = "Select Card" name = "card_Type">
+                
+                <option value = "visa"> Visa </option>
+                <option value = "mastercard"> Mastercard </option>
+                <option value = "american-express"> American Express</option>
+                <option value = "discover"> Discover</option>
+
+            </select>
+            <label> 
+                Credit Card Number
+                <br> </br>
+                <input id = "card No." name = "card Number" type = "tel" placeholder="xxxx xxxx xxxx xxxx" required />
+
+            </label>
+            <br> </br>
+            <label>
+                Expiration Date
+                <br> </br>
+                <input id = "expiration-date" name = "expiration date" type = "text" required/>
+
+            </label>
+        </fieldset>
+        <input type = "submit" value = "Submit Payment"/>
+
+
+    </form>
+
+
+    
+</body>
+</html>
