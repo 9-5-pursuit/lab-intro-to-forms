@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form id="payment-form">
+      <fieldset form="payment-form">
+        <legend>Contact Information</legend>
+        <div>
+            <label>Mx.</label>
+            <br />
+             <input id="mx" name="title" type="radio" value="Mx" checked />
+            <br />
+            <label>Mr.</label>
+             <br />
+            <input id="male" name="title" type="radio" value="Mr" />
+            <br />
+            <label>Ms.</label>
+            <br />
+            <input id="female" name="title" type="radio" value="Ms" />
+            <br />
+            <label>Mrs.</label>
+            <br />
+            <input id="female-married" name="title" type="radio" value="Mrs" />
+        </div>
+        <div>
+            <label for="name">Name</label>
+            <br/>
+            <input id="name" name="name" type="text" placeholder="Enter name here..." required />
+            </label>
+            <br />
+            <label for="email">Email</label>
+            <br/>
+            <input id="email" name="email" type="email" placeholder="Enter email here..." required />
+            </label>
+        </div>
+      </fieldset>
+      <fieldset form="payment-form">
+        <legend>Payment Information</legend>
+        <label>
+            Credit Card Type
+        <br/>
+            <select id="credit-card" name="credit-card-type">
+                <!--<option>-- Select Credit Card Type --</option>-->
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+        </label>
+        <br />
+        <label for="credit-card-number">Credit Card Number</label>
+        <br/>
+        <input id="credit-card" name="credit-card-number" type="text" placeholder="xxxx xxxx xxxx xxxx" required />
+        </label>
+        <br />
+        <label for="expiration-date">Expiration Date</label>
+        <br />
+        <input id="expiration-date" name="credit-card-expiration-date" type="text" placeholder="xx/xx" required />
+      </fieldset>
+      <input type="submit" value="Submit Payment" />
+    </form>
+  </body>
+</html>
