@@ -40,15 +40,15 @@ In addition to looking similar to the image above, make sure you meet the follow
 
 - [ ] Your submit button should be an `input` element, with the text `Submit Payment`.
 
-- [ ] You should have all four radio buttons listed above.
+- [/] You should have all four radio buttons listed above.
 
-- [ ] The first radio button should be `checked` by default.
+- [/] The first radio button should be `checked` by default.
 
-- [ ] When a radio button is clicked, the other radio buttons should be de-selected.
+- [/] When a radio button is clicked, the other radio buttons should be de-selected.
 
-- [ ] The Name field should be a text input, have a corresponding label tag, have an id of `name`, and be required.
+- [/] The Name field should be a text input, have a corresponding label tag, have an id of `name`, and be required.
 
-- [ ] The Email field should be an email input, have a corresponding label tag, have am id of `email`, and be required.
+- [/] The Email field should be an email input, have a corresponding label tag, have am id of `email`, and be required.
 
 - [ ] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
 
