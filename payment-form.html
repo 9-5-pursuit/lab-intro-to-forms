@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1, 0" />
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+
+    <p>Required fields are marked by *</p>
+
+    <fieldset>
+        <form>
+        <legend>Contact Information</legend>
+
+        <label>
+            Mx.<br>
+            <input id="contact-info-prefix" value="mx" name="prefix" type="radio" checked/>
+        <br/>
+        </label>
+        
+        <label>
+            Mr.<br>
+            <input id="contact-info-prefix" value="mr" name="prefix" type="radio"/>
+        <br/>
+        </label>
+
+        <label>
+            Ms.<br>
+            <input id="contact-info-prefix" value="ms" name="prefix" type="radio"/>
+        <br/>
+        </label>
+
+        <label>
+            Mrs.<br>
+            <input id="contact-info-prefix" value="mrs" name="prefix" type="radio"/>
+        <br/>
+        </label>
+
+        <label>
+            Name<br>
+            <input id="required-name" name="name" type="text" required/>
+            <br/>
+        </label>
+
+        <label>
+            Email<br>
+            <input id="required-email" name="email" type="email" required/>
+            <br/>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment Information</legend>
+
+        <label>
+            <select id="card-type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            Credit Card Number
+
+            <label>
+                <br><input id="credit-card-number" name="xxxx" type="text" placeholder="xxxx xxxx xxxx xxxx" required><br/>
+            </label>
+
+            <label>
+                Expiration Date
+                <br><input id="expiration-date" name="card-expiration" type="text" required><br/>
+            </label>
+        </label>
+
+        <label>
+            <input type="submit" value="Submit Payment"/>
+        </label>
+    </form>
+    </fieldset>
+</body>
