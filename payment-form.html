@@ -10,57 +10,61 @@
     <h1>Payment Form</h1>
 
     <p>Required fields are marked by *</p>
+
 <form>
-  <div>
-  <fieldset>
-    <legend>Contact Information</legend>
-    <div>
-        <form>
-     <div>
-         <label for="mx">Mx</label><br/>
-         <input type="radio" id="gender-undisclosed-abreviation" name="gender" value="undisclosed" checked/>  
-    </div>
-
-    <div>
-         <label for="mr">Mr</label><br/>
-        <input  type="radio" id="gender-male-abreviation" name="gender" value="male"/>
-    </div>
-
-    <div>
-        <label for="ms">Ms</label><br/>
-        <input  type="radio" id="gender-unmaried-female" name="gender" value="unmaried-female"/>
-    </div>
-
-    <div>
-         <label for="mrs">Mrs</label><br/>
-        <input type="radio" id="gender-maried-abreviation" name="gender" value="maried-female"/>
-    </div>
-        </form>
-
-    <div>
-        <label for="user-name">Name</label><br/> 
-        <input id="name" name="name" type="text" required="Name" />
-    </div>
-
-        <label for="user-email">Email</label><br/> 
-        <input id="email" name="email" type="email" required="Email"/>
- </fieldset>  
- </div>
-
+  
     <fieldset>
-    <legend>Payment Information</legend>
-       <div>   
-        <select>  
-        <option value="visa" checked>Visa</option> 
-        <option value="mastercard">Mastercard</option>
-        <option value="amereican-express">American Express</option>
-        <option value="discover">Discover</option>
-         </select>
-             <label for="card">Credit Card Number</label><br/>
-             <input id="card-input" type="text" placeholder="xxxx xxxx xxxx xxxx" required>
-         </div>
-      <label for="card-expiration-date">Expiration Date</label><br/>
-      <input id="expiration-date" type="text" required="expiration-date">
+    <legend>Contact Information</legend>
+    
+         <label>
+            Mx.<br/>
+            <input type="radio" id="prefix-mx" name="gender" value="mx" checked/><br/>  
+         </label>
+
+        <label>
+            Mr.<br/>
+           <input  type="radio" id="prefix-mr" name="gender" value="mr"/><br/>
+        </label>
+
+         <label>
+            Ms.<br/>
+            <input  type="radio" id="prefix-ms" name="gender" value="ms"/><br/>
+         </label>
+
+         <label>
+            Mrs.<br/>
+            <input type="radio" id="prefix-mrs" name="gender" value="mrs"/>
+         </label><br/>
+    
+        <label>
+            Name<br/>
+             <input id="name" name="name" type="text" required />
+        </label> 
+
+        <label>
+            Email<br/> 
+            <input id="email" name="email" type="email" required/>
+        </label>
+ </fieldset>  
+
+
+   <fieldset>
+            <legend>Payment Information</legend>
+
+                 <select id="card-type" name="card-type"> 
+                     <option value="visa">Visa</option> 
+                     <option value="mastercard">Mastercard</option>
+                     <option value="american-express">American Express</option>
+                     <option value="discover">Discover</option>
+                </select> <br/>
+
+        <label for="card">Credit Card Number</label><br/>
+             <input id="cc-number" type="tel" name="card-type" placeholder="xxxx xxxx xxxx xxxx" required />
+      <label>
+        Expiration Date<br/>
+      <input id="expiration-date" type="text" name="expiration-date" required />
+      </label>
+
     </fieldset>
     
         <input type="submit" value="Submit Payment" />
